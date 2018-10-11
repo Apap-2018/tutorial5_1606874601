@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<nav th:replace="fragments/fragment :: navbar"></nav><br>
+	<nav th:replace="fragments/fragment :: navbar(title='Not Found')"></nav><br>
 	<h2>Data Tidak Ditemukan!</h2>
 	<a th:href="@{/}">Kembali</a>
 </body>

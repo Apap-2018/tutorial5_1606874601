@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<nav th:replace="fragments/fragment :: navbar"></nav><br>
+	<nav th:replace="fragments/fragment :: navbar(title='Add')"></nav><br>
 	<h2>Data Berhasil Ditambahkan</h2>
 	<a th:href="@{/}">Kembali</a>
 </body>
