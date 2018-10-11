@@ -41,12 +41,6 @@ public class FlightController {
 		return "addFlight";
 	}
 	
-	/*@RequestMapping(value = "/flight/add", method = RequestMethod.POST)
-	private String addFlightSubmit(@ModelAttribute FlightModel flight) {
-		flightService.addFlight(flight);
-		return "add";
-	}*/
-	
 	@RequestMapping(value = "/flight/add/{licenseNumber}", params = {"addRow"}, method = RequestMethod.POST)
 	private String addRow(@ModelAttribute PilotModel pilot, BindingResult bindingResult, Model model) {
 		if(pilot.getPilotFlight()==null) {
